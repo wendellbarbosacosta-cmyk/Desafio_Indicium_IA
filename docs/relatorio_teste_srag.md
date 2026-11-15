@@ -1,3 +1,73 @@
-# Relatório Automático - Agente SRAG
+# Relatório de Inteligência Epidemiológica – Monitoramento de SRAG
+**Indicium HealthCare | Unidade de Epidemiologia e Engenharia de IA**  
+*Data de Emissão:* Outubro de 2024  
+*Base de Dados Analisada:* Notificações de Síndrome Respiratória Aguda Grave (SRAG) — SIVEP-Gripe
 
-[{'type': 'text', 'text': '# Relatório Executivo: Análise de Internações em UTI por SRAG e Diretrizes do Ministério da Saúde\n\n**Indicium HealthCare — Diretoria de Análise de Dados e Inteligência Epidemiológica**  \n**Data:** 29 de março de 2026  \n**Público-alvo:** Gestores Hospitalares, Vigilância Epidemiológica e Lideranças Clínicas\n\n---\n\n## 1. Resumo Executivo\n\nO presente relatório consolida os dados de Síndrome Respiratória Aguda Grave (SRAG) extraídos da base analítica hospitalar (`srag_info`), avaliando a proporção de casos que evoluíram com necessidade de suporte intensivo em Unidade de Terapia Intensiva (UTI). Adicionalmente, correlaciona-se esse panorama com as diretrizes e recomendações atualizadas do Ministério da Saúde do Brasil para mitigação de morbimortalidade e prevenção de formas graves decorrentes de patógenos respiratórios.\n\n---\n\n## 2. Análise de Dados: Internações em Terapia Intensiva (UTI)\n\nA partir da base de dados contendo **165.397 notificações de SRAG**, estratificou-se a variável de internação em UTI conforme a codificação padrão de vigilância epidemiológica (1 = Sim, 2 = Não, 9 = Ignorado e Nulos).\n\n### Tabela 1: Distribuição de Notificações de SRAG por Admissão em UTI\n\n| Categoria de Internação em UTI | Quantidade de Pacientes | Proporção sobre o Total Geral (%) | Proporção sobre Casos Válidos (%) |\n| :--- | :---: | :---: | :---: |\n| **Internado em UTI (Sim)** | **42.519** | **25,71%** | **29,42%** |\n| **Não internado em UTI (Não)** | 102.021 | 61,68% | 70,58% |\n| **Dado Ignorado** | 1.846 | 1,12% | — |\n| **Dado Não Preenchido (Nulo)** | 19.011 | 11,49% | — |\n| **Total Analisado** | **165.397** | **100,00%** | **100,00%** |\n\n### Explicabilidade das Métricas\n\n* **Impacto Assistencial Direto:** Entre todas as notificações de SRAG registradas, **25,71%** dos pacientes necessitaram de leito de terapia intensiva. Ao considerar apenas os registros com desfecho de UTI conhecido e válido (144.540 notificações), a taxa de admissão crítica atinge **29,42%** (aproximadamente 3 em cada 10 pacientes admitidos).\n* **Sobrecarga Hospitalar:** Taxas de UTI próximas a 30% em síndromes respiratórias evidenciam alta complexidade da amostra, associada a quadros de insuficiência respiratória hipoxêmica aguda e necessidade frequente de suporte ventilatório invasivo ou não invasivo.\n* **Qualidade do Dado:** A presença de 11,49% de dados omissos/nulos reforça a necessidade contínua de capacitação das equipes de vigilância para preenchimento oportuno do formulário de notificação, garantindo precisão no dimensionamento de leitos.\n\n---\n\n## 3. Recomendações Recentes do Ministério da Saúde\n\nCom base nas notas técnicas e guias de manejo clínico vigentes do Ministério da Saúde para o enfrentamento de vírus respiratórios (Influenza, Covid-19, VSR e outros), destacam-se duas recomendações fundamentais para evitar complicações graves:\n\n### 1. Imunização Oportuna e Atualização do Esquema Vacinal\n* **Diretriz:** Adesão rigorosa às campanhas de vacinação anual contra Influenza e doses de reforço para Covid-19, com prioridade máxima para populações de maior vulnerabilidade clínica (idosos a partir de 60 anos, crianças de 6 meses a menores de 6 anos, gestantes, puérperas, imunossuprimidos e portadores de comorbidades crônicas).\n* **Justificativa Clínica:** A vacinação é a intervenção com melhor custo-efetividade para prevenir formas graves, diminuindo diretamente a taxa de admissão hospitalar e a progressão para falência ventilatória.\n\n### 2. Manejo Clínico Precoce com Antivirais (Fosfato de Oseltamivir)\n* **Diretriz:** Prescrição imediata de antiviral fosfato de oseltamivir para todos os pacientes diagnosticados com Síndrome Gripal (SG) que apresentem fatores de risco para agravamento, bem como para todos os casos de SRAG, **sem necessidade de aguardar confirmação laboratorial**.\n* **Janela Terapêutica:** O tratamento deve ser iniciado preferencialmente nas primeiras **48 horas** do início dos sintomas, período em que o inibidor de neuraminidase apresenta maior eficácia na redução do tempo de doença, das complicações sistêmicas e do risco de óbito.\n\n---\n\n## 4. Recomendações e Insights para a Tomada de Decisão\n\n* **Dimensionamento de Recursos Críticos:** Estabelecer um contingenciamento hospitalar prevendo que cerca de **25% a 30%** das internações por SRAG demandarão leitos de cuidados intensivos e ventiladores mecânicos.\n* **Protocolos de Triagem em Emergência:** Implementar triagem direcionada para início ágil de oseltamivir e isolamento respiratório preventivo nos prontos-socorros, mitigando a evolução desfavorável em leito de enfermaria.\n* **Busca Ativa de Cobertura Vacinal:** Articular campanhas locais de imunização nas unidades de saúde e monitorar o status vacinal dos pacientes no momento da admissão hospitalar para direcionamento de condutas profiláticas.', 'extras': {'signature': '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'}}]
+---
+
+## 1. Sumário Executivo
+
+Este relatório apresenta uma análise detalhada dos dados de Síndrome Respiratória Aguda Grave (SRAG) notificados no território nacional. O objetivo é subsidiar a tomada de decisão clínica, o planejamento da alocação de leitos de terapia intensiva e o direcionamento de campanhas vacinais.
+
+A análise combinou modelagem analítica sobre **165.397 registros** com vigilância ativa de fontes oficiais (Boletins InfoGripe / Fiocruz).
+
+---
+
+## 2. Métricas Epidemiológicas Consolidadas
+
+A tabela abaixo sintetiza os 4 eixos métricos obrigatórios extraídos da base de dados, calculados tanto sobre a totalidade de notificações quanto sobre a coorte de desfechos/respostas preenchidas (casos válidos):
+
+| Dimensão / Métrica | Valor Absoluto | Proporção / Taxa (Base Válida) | Proporção / Taxa (Total Geral) | Interpretação Clínica / Epidemiológica |
+| :--- | :---: | :---: | :---: | :--- |
+| **Variação de Casos (Últimos 30d vs 30d Anteriores)** | 44.486 vs 48.431 | **-8,15%** | **-8,15%** | Redução recente de 8,15% no ritmo de notificações diárias, indicando desaceleração após período de pico sazonal. |
+| **Taxa de Mortalidade por SRAG** | 9.885 óbitos | **7,96%** (de 124.188 desfechos válidos) | **5,98%** (de 165.397 notificações) | Gravidade acentuada dos pacientes hospitalizados; desfecho fatal em ~8% dos pacientes cujo acompanhamento foi concluído. |
+| **Taxa de Necessidade de UTI** | 42.519 internações | **29,42%** (de 144.540 registros válidos) | **25,71%** (de 165.397 notificações) | Praticamente 3 em cada 10 pacientes com SRAG exigem suporte ventilatório e cuidados intensivos, demandando alto volume de recursos hospitalares. |
+| **Taxa de Vacinação – Covid-19** | 124.808 vacinados | **76,09%** (de 164.025 respostas válidas) | **75,46%** (de 165.397 notificações) | Boa cobertura do esquema vacinal prévio contra Covid-19 entre os indivíduos hospitalizados, refletindo proteção de base populacional. |
+| **Taxa de Vacinação – Gripe (Influenza)** | 48.055 vacinados | **32,14%** (de 149.529 respostas válidas) | **29,05%** (de 165.397 notificações) | Baixa cobertura vacinal contra influenza entre os hospitalizados (apenas 32%), evidenciando suscetibilidade ao vírus Influenza A/B. |
+
+---
+
+## 3. Interpretação Clínica e Epidemiológica das Métricas
+
+### 3.1. Dinâmica de Contágio e Variação Mensal (-8,15%)
+Houve uma redução de 48.431 para 44.486 casos entre a janela anterior de 30 dias e a atual. Essa estabilização aponta para uma inflexão após semanas de alta transmissão de vírus respiratórios. No entanto, o patamar absoluto mensal (acima de 44 mil casos) ainda impõe sobrecarga às redes de urgência e emergência.
+
+### 3.2. Mortalidade Específica (7,96% nos desfechos definidos)
+A letalidade de 7,96% entre casos com evolução conhecida (cura vs. óbito) reforça que a SRAG acomete prioritariamente grupos com imunossenescência, comorbidades cardiopulmonares e faixas etárias extremas. O monitoramento precoce da saturação de oxigênio é crucial para evitar a progressão para falência de múltiplos órgãos.
+
+### 3.3. Pressão sobre Terapia Intensiva (29,42%)
+A admissão de quase 30% dos pacientes em leitos de UTI sublinha a dependência crítica de infraestrutura para ventilação mecânica invasiva e não invasiva. Esse indicador orienta os gestores a manter planos de contingência de leitos críticos ativos durante períodos de sazonalidade.
+
+### 3.4. Disparidade Vacinal (Covid-19 76% vs. Influenza 32%)
+A expressiva diferença entre a imunização contra Covid-19 (76,09%) e a vacina contra Influenza (32,14%) demonstra que a adesão à vacinação anual da gripe permanece defasada. Como os vírus Influenza A continuam provocando quadros graves em adultos e idosos, essa defasagem é um fator de risco determinante para internação hospitalar.
+
+---
+
+## 4. Evolução Temporal de Casos
+
+Abaixo estão dispostos os comportamentos temporal e sazonal das notificações registradas:
+
+### 4.1. Curva Diária (Últimos 30 Dias)
+![Casos Diários - Últimos 30 Dias](grafico_diario_30d.png)
+
+*Análise da série diária:* Observa-se a oscilação típica de ciclos semanais (menor inserção de dados em finais de semana e feriados) e a manutenção de uma média diária elevada, porém estável, sem tendência explosiva no curto prazo.
+
+### 4.2. Série Histórica Mensal (Últimos 12 Meses)
+![Casos Mensais - Últimos 12 Meses](grafico_mensal_12m.png)
+
+*Análise da série mensal:* Evidencia o comportamento sazonal característico das síndromes respiratórias agudas graves no Brasil, com ascensão expressiva durante as transições de estação (outono/inverno) e platô persistente decorrente da co-circulação viral.
+
+---
+
+## 5. Contexto Epidemiológico Nacional e Diretrizes Recentes
+
+Conforme os boletins recentes divulgados pelo **Sistema de Vigilância Epidemiológica / InfoGripe da Fiocruz**:
+- **Co-circulação Viral:** O cenário epidemiológico nacional é caracterizado pela circulação concomitante do Vírus Sincicial Respiratório (VSR) em faixas pediátricas, de variantes de **Covid-19** e de **Influenza A** nas populações adulta e idosa, com destaque para as regiões Centro-Sul e Sudeste.
+- **Vulnerabilidade em Idosos:** O InfoGripe aponta tendência de aumento na proporção de internações de idosos por Covid-19 e Influenza em estados como São Paulo, Rio de Janeiro, Minas Gerais, Goiás e Distrito Federal.
+- **Recomendações e Diretrizes:** 
+  1. **Reforço Vacinal:** Intensificação de campanhas de vacinação anual contra Influenza e doses de reforço bivalentes para Covid-19, prioritariamente para pessoas com 60+ anos e imunossuprimidos.
+  2. **Intervenção Precoce:** Uso oportuno de antivirais (como Oseltamivir nas primeiras 48h para casos de SRAG/Influenza e antivirais orais específicos para Covid-19 em grupos de risco).
+  3. **Medidas Não Farmacológicas:** Isolamento respiratório para sintomas gripais e uso de máscaras faciais em ambientes hospitalares e de longa permanência.
+
+---
+*Relatório processado e validado via Indicium HealthCare Analytics Engine.*

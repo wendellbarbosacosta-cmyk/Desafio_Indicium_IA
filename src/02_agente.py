@@ -3,6 +3,8 @@ import logging
 import time
 import sqlite3
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')  # Modo sem janela para rodar em threads
 import matplotlib.pyplot as plt
 from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
