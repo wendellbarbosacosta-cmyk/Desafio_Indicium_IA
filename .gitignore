@@ -1,0 +1,14 @@
+# Chaves e arquivos sensíveis
+.env
+
+# Arquivos muito pesados
+data/dados_srag.*
+data/*.csv
+
+# Arquivos do Python e Cache
+__pycache__/
+*.pyc
+
+# Ambientes Virtuais (se utilizar)
+venv/
+.venv/
