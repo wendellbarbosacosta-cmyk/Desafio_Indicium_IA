@@ -29,7 +29,7 @@ O agente foi dotado de três ferramentas principais que ele decide, de forma aut
 ## 🛡️ Governança, Guardrails e Tratamento de Dados Sensíveis
 
 - **Anonimização e LGPD (`01_preparacao_dados.py`):** O dataset original do Open DATASUS (~100 colunas) passa por um pipeline de higienização prévia que descarta colunas identificáveis e retém exclusivamente variáveis analíticas (`DT_NOTIFIC`, `EVOLUCAO`, `UTI`, `VACINA_COV`, `VACINA`, `SG_UF_NOT`, `NU_IDADE_N`) referentes aos últimos 12 meses.
-- **Auditoria e Transparência:** Todas as ações, chamadas de ferramentas e eventos do agente são registrados com carimbo de tempo em `docs/agent_audit.log`[cite: 2].
+- **Auditoria e Transparência:** Todas as ações, chamadas de ferramentas e eventos do agente são registrados com carimbo de tempo em `docs/agent_audit.log`.
 - **Guardrails de Escopo e Segurança SQL:** O `System Prompt` restringe o agente a responder apenas sobre saúde pública/epidemiologia e proíbe comandos DDL/DML (`DROP`, `DELETE`, `UPDATE`, `INSERT`).
 - **Resiliência (Exponential Backoff):** Implementação de retentativas automáticas para contornar oscilações de rede ou limites de taxa da API (erros 429/503).
 
@@ -71,4 +71,4 @@ Crie um arquivo `.env` na raiz do projeto com a sua chave do Google Gemini:
     cd src
     python 02_agente.py
 
-O agente exibirá o passo a passo do seu raciocínio no terminal, salvará os gráficos `.png` e exportará o relatório completo em `docs/relatorio_teste_srag.md`[cite: 2].
+O agente exibirá o passo a passo do seu raciocínio no terminal, salvará os gráficos `.png` e exportará o relatório completo em `docs/relatorio_teste_srag.md`.
